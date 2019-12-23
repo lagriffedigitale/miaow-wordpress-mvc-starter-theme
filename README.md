@@ -12,8 +12,8 @@ cssFiles.config.php is the file where to must add your CSS Files to enqueue to t
 An example :  
 `
 [  
-    'handle'        => 'miaow-main-stylesheet',<br/>  
-    'path'          => CSS_PATH . '/app.css', <br/>
+    'handle'        => 'miaow-main-stylesheet',\
+    'path'          => CSS_PATH . '/app.css', \
     'dependencies'  => [],  <br/>
     'version'       => '2.0.0',  
     'media'         => 'all'  
