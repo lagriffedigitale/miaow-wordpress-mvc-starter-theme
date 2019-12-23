@@ -1,0 +1,17 @@
+/vendor/
+node_modules/
+/npm-debug.log
+/wpcs/
+/packaged/
+/backup/
+/dist/
+/FrontendDevelopement/
+/Front/
+/front/
+.idea
+*.swp
+*.log
+*.sass-cache*
+composer.lock
+package-lock.json
+.DS_Store
