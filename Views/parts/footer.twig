@@ -1,0 +1,7 @@
+<footer class="footer-page">
+    {% if footer_menu is not empty %}
+        {% include 'components/menu.twig' with {'menu': footer_menu.items} %}
+    {% endif %}
+    <hr>
+    ©{{ fn('date', 'Y') }} {{ site.name }} - {{ __('All rights reserved', constant(LANG_DOMAIN)) }}
+</footer>

@@ -1,0 +1,15 @@
+{
+    "name": "la-griffe-digitale/miaow",
+    "description": "Starter theme LGD based on MVC Design pattern and Timber library",
+    "type": "project",
+    "authors": [
+        {
+            "name": "ALLEGRE Jérôme",
+            "email": "jerome@lagriffe-digitale.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "timber/timber": "1.9.4"
+    }
+}

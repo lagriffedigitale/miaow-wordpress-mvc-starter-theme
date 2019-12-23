@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Starter LGD\n"
+"POT-Creation-Date: 2019-08-31 19:45-0400\n"
+"PO-Revision-Date: 2019-08-31 20:16-0400\n"
+"Last-Translator: \n"
+"Language-Team: La Griffe Digitale\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Config/menus.config.php:3
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: Config/menus.config.php:4
+msgid "Footer menu"
+msgstr "Menu de pied de page"
+
+#: Controllers/BasicController.php:31
+msgid ""
+"Timber library is not activated. Be sure to install composer or install "
+"Timber Plugin"
+msgstr ""
+"La librairie TIMBER n’est pas active. Veuillez l’installer via Composer ou "
+"en installant le plugin Tomber"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:158
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:169
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:161
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:169
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:169
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:135
+msgid "Commands:"
+msgstr "Commandes :"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:166
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:179
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:169
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:179
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:179
+msgid "aliases:"
+msgstr "alias :"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:225
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:241
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:228
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:241
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:241
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:197
+msgid "boolean"
+msgstr "Booléen"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:226
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:242
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:229
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:242
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:242
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:198
+msgid "count"
+msgstr "compte"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:227
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:228
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:243
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:244
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:230
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:231
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:243
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:244
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:243
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:244
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:199
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:200
+msgid "string"
+msgstr "Chaine de caractère"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:229
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:245
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:232
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:245
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:245
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:201
+msgid "array"
+msgstr "tableau"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:230
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:246
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:233
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:246
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:246
+msgid "number"
+msgstr "Nombre"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:234
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:250
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:237
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:250
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:250
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:205
+msgid "required"
+msgstr "requis"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:235
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:251
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:238
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:251
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:251
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:206
+msgid "choices:"
+msgstr "Choix :"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:254
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:270
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:257
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:270
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:270
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:225
+msgid "Examples:"
+msgstr "Exemples :"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:354
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:385
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:358
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:385
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:385
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:322
+msgid "generated-value"
+msgstr "generated-value"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/usage.js:376
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:177
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/usage.js:407
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/usage.js:380
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:177
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/usage.js:407
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:177
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/usage.js:407
+#: FrontDevelopement/node_modules/yargs/lib/usage.js:344
+msgid "default:"
+msgstr "Défaut:"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:22
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:37
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:26
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:49
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:26
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:49
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:26
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:49
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:27
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:50
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:19
+#, javascript-format
+msgid "Not enough non-option arguments: got %s, need at least %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:26
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:37
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:37
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:37
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:38
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:23
+#, javascript-format
+msgid "Too many non-option arguments: got %s, maximum of %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:171
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:185
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:183
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:185
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:186
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:148
+msgid "Invalid values:"
+msgstr "Valeurs invalides :"
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:174
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:188
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:186
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:188
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:189
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:151
+#, javascript-format
+msgid "Argument: %s, Given: %s, Choices: %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:200
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:218
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:212
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:218
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:219
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:171
+#, javascript-format
+msgid "Argument check failed: %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:270
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:283
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:276
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:283
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:284
+#: FrontDevelopement/node_modules/yargs/lib/validation.js:238
+msgid "Implications failed:"
+msgstr ""
+
+#: FrontDevelopement/node_modules/browser-sync/node_modules/yargs/lib/validation.js:294
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:332
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:324
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:332
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:333
+#, javascript-format
+msgid "Did you mean %s?"
+msgstr ""
+
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs-parser/index.js:301
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs-parser/index.js:301
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs-parser/index.js:306
+#: FrontDevelopement/node_modules/yargs-parser/index.js:301
+#: FrontDevelopement/node_modules/yargs/lib/parser.js:247
+#, javascript-format
+msgid "Not enough arguments following: %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs-parser/index.js:449
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs-parser/index.js:449
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs-parser/index.js:454
+#: FrontDevelopement/node_modules/yargs-parser/index.js:449
+#: FrontDevelopement/node_modules/yargs/lib/parser.js:371
+#, javascript-format
+msgid "Invalid JSON config file: %s"
+msgstr ""
+
+#: FrontDevelopement/node_modules/gulp/node_modules/yargs/lib/validation.js:313
+#: FrontDevelopement/node_modules/localtunnel/node_modules/yargs/lib/validation.js:305
+#: FrontDevelopement/node_modules/sass-graph/node_modules/yargs/lib/validation.js:313
+#: FrontDevelopement/node_modules/webpack/node_modules/yargs/lib/validation.js:314
+#, javascript-format
+msgid "Arguments %s and %s are mutually exclusive"
+msgstr ""
+
+#: Helpers/MediaHelper.php:43
+msgid "bytes"
+msgstr "Octets"
+
+#: Helpers/MediaHelper.php:45 Helpers/MediaHelper.php:47
+msgid "byte"
+msgstr "octet"
+
+#: Helpers/PostTypeHelper.php:70
+msgid "Add new"
+msgstr "Ajouter"
+
+#: Helpers/PostTypeHelper.php:71 Helpers/PostTypeHelper.php:116
+#, php-format
+msgid "Add new %s"
+msgstr "Ajouter un nouveau %s"
+
+#: Helpers/PostTypeHelper.php:72 Helpers/PostTypeHelper.php:117
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#: Helpers/PostTypeHelper.php:73 Helpers/PostTypeHelper.php:114
+#, php-format
+msgid "Edit %s"
+msgstr "Editer %s"
+
+#: Helpers/PostTypeHelper.php:74 Helpers/PostTypeHelper.php:75
+#, php-format
+msgid "View %s"
+msgstr "Voir la fiche détail de %s"
+
+#: Helpers/PostTypeHelper.php:76 Helpers/PostTypeHelper.php:111
+#, php-format
+msgid "All %s"
+msgstr "Tous les %s"
+
+#: Helpers/PostTypeHelper.php:77 Helpers/PostTypeHelper.php:110
+#, php-format
+msgid "Search %s"
+msgstr "Rechercher un %s"
+
+#: Helpers/PostTypeHelper.php:78 Helpers/PostTypeHelper.php:112
+#: Helpers/PostTypeHelper.php:113
+#, php-format
+msgid "Parent %s"
+msgstr "%s parent"
+
+#: Helpers/PostTypeHelper.php:79
+#, php-format
+msgid "No %s found"
+msgstr "Aucun %s trouvé"
+
+#: Helpers/PostTypeHelper.php:80
+#, php-format
+msgid "No %s found in trash"
+msgstr "Aucun %s trouvé dans la corbeille"
+
+#: Helpers/PostTypeHelper.php:82
+#, php-format
+msgid "%s post type"
+msgstr "Type de contenu %s"
+
+#: Helpers/PostTypeHelper.php:115
+#, php-format
+msgid "Update %s"
+msgstr "Mettre à jour le %s"
+
+#: Hooks/acfHooks.php:67 Hooks/acfHooks.php:68
+msgid "Website settings"
+msgstr "Paramètres du site"
+
+#: vendor/timber/timber/lib/Archives.php:160
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: vendor/timber/timber/lib/Archives.php:162
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: vendor/timber/timber/lib/Pagination.php:115
+msgid "&laquo; Previous"
+msgstr "&laquo; Précédent"
+
+#: vendor/timber/timber/lib/Pagination.php:116
+msgid "Next &raquo;"
+msgstr "Suivant &raquo;"
+
+#: vendor/timber/timber/lib/Pagination.php:179
+#: vendor/timber/timber/lib/TextHelper.php:41
+msgid "&hellip;"
+msgstr "&hellip;"
+
+#: vendor/timber/timber/tests/test-timber-gettext.php:8
+#: vendor/timber/timber/tests/test-timber-gettext.php:21
+msgid "my_boo"
+msgstr "my_boo"
+
+#: vendor/timber/timber/tests/test-timber-menu.php:533
+#: vendor/timber/timber/tests/test-timber-menu.php:534
+msgid "Gallery"
+msgstr "Galerie"
+
+#: vendor/timber/timber/tests/test-timber-revisions.php:18
+msgid "Box"
+msgstr "Boîte"
+
+#: vendor/timber/timber/tests/test-timber-revisions.php:19
+msgid "Post Type Description"
+msgstr "Description du type de contenu"
+
+#: vendor/timber/timber/tests/wp-overrides.php:40
+#, php-format
+msgid "\"%1$s\" from %2$s by %3$s."
+msgstr "\"%1$s\" au %2$s par %3$s."
+
+#: vendor/timber/timber/tests/wp-overrides.php:43
+#, php-format
+msgid "\"%1$s\" from %2$s."
+msgstr "\"%1$s\" au %2$s."
+
+#: vendor/timber/timber/tests/wp-overrides.php:46
+#, php-format
+msgid "\"%1$s\" by %2$s."
+msgstr "\"%1$s\" par  %2$s."
+
+#: vendor/timber/timber/tests/wp-overrides.php:48
+#, php-format
+msgid "\"%s\"."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:55
+#, php-format
+msgid "%1$s by %2$s."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:67
+#, php-format
+msgid "Released: %d."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:72
+#, php-format
+msgid "Track %1$s of %2$s."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:74
+#, php-format
+msgid "Track %1$s."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:78
+#, php-format
+msgid "Genre: %s."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:143
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "La taille du fichier dépasse la limite définie par le fichier php.ini"
+
+#: vendor/timber/timber/tests/wp-overrides.php:144
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+"La taille du fichier dépasse la limite définie par la constante MAX_FILE_SIZE"
+
+#: vendor/timber/timber/tests/wp-overrides.php:145
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:146
+msgid "No file was uploaded."
+msgstr "Aucun fichier télévisé"
+
+#: vendor/timber/timber/tests/wp-overrides.php:148
+msgid "Missing a temporary folder."
+msgstr "Dossier temporaire manquant"
+
+#: vendor/timber/timber/tests/wp-overrides.php:149
+msgid "Failed to write file to disk."
+msgstr "Impossible d’écrire sur le disque. Veuillez vérifier les droits."
+
+#: vendor/timber/timber/tests/wp-overrides.php:150
+msgid "File upload stopped by extension."
+msgstr "Téléversement du fichier arrêté par l’extension."
+
+#: vendor/timber/timber/tests/wp-overrides.php:167
+msgid "Invalid form submission."
+msgstr "Soumission formulaire invalide"
+
+#: vendor/timber/timber/tests/wp-overrides.php:177
+msgid "File is empty. Please upload something more substantial."
+msgstr ""
+"Le fichier est vide. Veuillez téléviser quelquechose de plus substantiel."
+
+#: vendor/timber/timber/tests/wp-overrides.php:179
+msgid ""
+"File is empty. Please upload something more substantial. This error could "
+"also be caused by uploads being disabled in your php.ini or by post_max_size "
+"being defined as smaller than upload_max_filesize in php.ini."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:185
+msgid "Specified file failed upload test."
+msgstr ""
+
+#: vendor/timber/timber/tests/wp-overrides.php:198
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr "Désolé, ce type de fichier est interdit pour des raisons de sécurité."
+
+#: vendor/timber/timber/tests/wp-overrides.php:223
+#, php-format
+msgid "The uploaded file could not be moved to %s."
+msgstr "Le fichier téléversé %s ne peut pas être déplacé."
+
+#: Views/components/blocks/content_block_downloadable_files_block.twig:17
+msgid "File size"
+msgstr "Taille du fichier"
+
+#: Views/components/news-item.twig:18 Views/components/news-item.twig:19
+msgid "Find out more"
+msgstr "En savoir plus"
+
+#: Views/pages/archive.twig:15
+msgid "No content available in this category"
+msgstr "Aucun contenu disponible dans cette catégorie pour le moment"
+
+#: Views/parts/footer.twig:4
+msgid "All rights reserved"
+msgstr "Tous droits réservés"

@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% if posts is not empty %}
+        <div class="row grid-x grid-padding-x">
+            {% for post in posts %}
+                <hr>
+                    {{ __('Preview post item', LANG_DOMAIN) }} {{ post.title }}
+                <hr>
+            {% endfor %}
+        </div>
+    {% else %}
+        {{ __('No content available in this category', LANG_DOMAIN) }}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,7 @@
+<header class="header-page">
+    <nav class="main-menu">
+        {% if main_menu is not empty %}
+            {% include 'components/menu.twig' with {'menu': main_menu.items} %}
+        {% endif %}
+    </nav>
+</header>
