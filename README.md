@@ -8,14 +8,14 @@ All configuration is in "Config" folder. Here you can find and add Custom Post T
 You can edit this file (constants.config.php) to add your PHP Constant variables like Google Maps API key for example.
 
 ### CSS Files to enqueue
-cssFiles.config.php is the file where to must add your CSS Files to enqueue to theme. You need to respect a datas structure based on PHP array.
-An example :
+cssFiles.config.php is the file where to must add your CSS Files to enqueue to theme. You need to respect a datas structure based on PHP array.  
+An example :  
 `
-[
-    'handle'        => 'miaow-main-stylesheet',
-    'path'          => CSS_PATH . '/app.css',
-    'dependencies'  => [],
-    'version'       => '2.0.0',
-    'media'         => 'all'
-]
+[  
+    'handle'        => 'miaow-main-stylesheet',  
+    'path'          => CSS_PATH . '/app.css',  
+    'dependencies'  => [],  
+    'version'       => '2.0.0',  
+    'media'         => 'all'  
+]  
 `
