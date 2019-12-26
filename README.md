@@ -28,5 +28,26 @@ In this file, you can find an example and you can use "miaow_js_files" hook-filt
 ### Javascript variables to print in DOM
 javascriptVars.config.php is the file where to must add your JS variables to print in the theme.   
 
-### Menus 
+### Menus
 javascriptVars.config.php is the file where to must add your JS variables to print in the theme.   
+
+### Custom Post Types
+You can add new custom post types with new custom taxonomies. You need to edit "postTypes.config.php" to add it. You'll fin an example for a "Book" custom post type with "Genre" taxonomy. All post type parameters can be overrided.
+
+## Controllers
+BasicController is the controller which manage and override the WordPress Template hierarchy to use Controllers instead PHP template files like "single.php" or "archive.php".
+BasicController do :
+* init the theme (load Timber library)
+* check the good controller to load
+* call "render" function from the loaded controller.
+
+Basically, the new template hierarchy works like WorPress Template Hierarchy :
+* Current page is a "Page" post type => Load **PageController.php**
+* Current page is a single page (post or Custom Post Type single page) => Load **SingleController.php**
+* Current page is an archive or category page => Load **ArchiveController.php**
+* Current page is tour website's front page => Load **FrontController.php**
+* Current page is search results page => Load **SearchController.php**
+* Current page is an archive or category page => Load **ArchiveController.php**
+
+You can add controllers to manage your Custom Post Type or your Custom taxonomies.  
+For example, if you want to add a Controller for your "Book" Custom Post Type, add a **BookController.php** file.
