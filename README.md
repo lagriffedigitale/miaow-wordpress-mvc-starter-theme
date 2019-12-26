@@ -58,4 +58,18 @@ With this process, you can, at least, override Render function from **BasicContr
 
 ## Views
 In "Views" folder, you'll find all twig files to manage your HTML Mark-up.  
-All is based on **Timber** library made by **Upstatement** . I recommend you to check [their awesome documentation] (https://timber.github.io/docs/)  
+All is based on **Timber** library made by **Upstatement** . I recommend you to check [their awesome documentation](https://timber.github.io/docs/)  
+
+## Models
+As you want, but you can add your models in Models folder. Here, you are totally free because **Miaow Theme** function is to override WordPress Template Hierarchy. Models is your programming logic and you can make as you want. I just recommend you to put it in "Models" folder.
+
+## Hooks  
+When you work with WordPress, you need to use some hooks, Actions or Filters, from WordPress Core or from added plugins like ACF (Advanced Custom Fields).  
+If you want to respect a good hierarchy in your theme, you can add HookClass in your Hooks folder.  
+You'll find two example, one for WordPress Core hooks like "init" or "wp_enqueue_scripts" in **WordPressHooks.php** and another for ACF hooks in **acfHooks.php**.  
+After, you need to instance, at least, your Hooks classes in **functions.php**.  
+
+
+## ACF Fields
+You can add you ACF group fields JSON Files in "Fields" folder.  
+ACF is overrided to check this folder instead of "acf-json" folder.
