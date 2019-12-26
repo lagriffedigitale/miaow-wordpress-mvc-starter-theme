@@ -49,5 +49,13 @@ Basically, the new template hierarchy works like WorPress Template Hierarchy :
 * Current page is search results page => Load **SearchController.php**
 * Current page is an archive or category page => Load **ArchiveController.php**
 
-You can add controllers to manage your Custom Post Type or your Custom taxonomies.  
-For example, if you want to add a Controller for your "Book" Custom Post Type, add a **BookController.php** file.
+You can add controllers to manage your Custom Post Type or your Custom taxonomies.   
+For example :  
+* you want to add a Controller for your "Book" Custom Post Type, add a **BookController.php** file.
+* you want to add a Controller for your "Genre" Custom Taxonomy, add a **GenreController.php** file.
+* you want to add a Controller for your "Roman" category linked to your "Genre" Custom Taxonomy, add a **RomanController.php** file.
+With this process, you can, at least, override Render function from **BasicController.php**
+
+## Views
+In "Views" folder, you'll find all twig files to manage your HTML Mark-up.  
+All is based on **Timber** library made by **Upstatement** . I recommend you to check [their awesome documentation] (https://timber.github.io/docs/)  
