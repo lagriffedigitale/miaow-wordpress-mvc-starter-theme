@@ -1,7 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/lagriffedigitale/miaow-wordpress-mvc-starter-theme/master/screenshot.png "Miaow - Model-View-Controller WordPress starter theme")  
 
 # Miaow : WordPress starter theme based on MVC pattern
-Miaow is a WordPress starter theme based on MVC pattern (Model View Controller) and Timber library. There is no render stuff but just a skeleton to work on MVC pattern with a WordPress theme.
+Miaow is a WordPress starter theme based on MVC pattern (Model View Controller) and [Timber library](https://www.upstatement.com/timber/). There is no render stuff but just a skeleton to work on MVC pattern with a WordPress theme.
 
 ## Configuration
 All configuration is in "Config" folder. Here you can find and add Custom Post Type definition, Menus endpoints, Javascript or CSS files to enqueue, images sizes and constants variables to use.
