@@ -2,7 +2,7 @@
 namespace Miaow\Hooks;
 
 // Include Constants
-require_once( get_template_directory() . '/Config/constants.config.php');
+require_once(get_template_directory() . '/Config/constants.config.php');
 
 /**
  * Contains Advandced Custom Fields Hooks

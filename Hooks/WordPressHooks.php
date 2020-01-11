@@ -4,7 +4,7 @@ namespace Miaow\Hooks;
 use Miaow\Helpers\PostTypeHelper;
 
 // Include Constants
-require_once( get_template_directory() . '/Config/constants.config.php');
+require_once(get_template_directory() . '/Config/constants.config.php');
 
 /**
  * Contains WordPress Hooks
@@ -23,7 +23,7 @@ class WordPressHooks
         // Disable Block editor for post types
         add_filter('use_block_editor_for_post_type', '__return_false', 10);
         // Disable "Try Guntenberg" Panel
-        remove_filter( 'try_gutenberg_panel', 'wp_try_gutenberg_panel' );
+        remove_filter('try_gutenberg_panel', 'wp_try_gutenberg_panel');
         // After theme Set-up
         add_action('after_setup_theme', [$this, 'onThemeSetUp']);
         // On WP loaded
@@ -91,7 +91,6 @@ class WordPressHooks
      */
     public function onWPLoaded()
     {
-
     }
 
     /**
@@ -111,7 +110,7 @@ class WordPressHooks
                         $jsFile['path'],
                         (!empty($jsFile['dependencies']) && is_array($jsFile['dependencies'])) ? $jsFile['dependencies'] : [],
                         (!empty($jsFile['version'])) ? $jsFile['version'] : '',
-                        (!empty($jsFile['in_footer'])) ? $jsFile['in_footer'] : FALSE
+                        (!empty($jsFile['in_footer'])) ? $jsFile['in_footer'] : false
                     );
                 }
             }
@@ -163,7 +162,7 @@ class WordPressHooks
                         $imageConfiguration['image_id'],
                         $imageConfiguration['width'],
                         $imageConfiguration['height'],
-                        (!empty($imageConfiguration['crop'])) ? $imageConfiguration['crop'] : FALSE
+                        (!empty($imageConfiguration['crop'])) ? $imageConfiguration['crop'] : false
                     );
                 }
             }
@@ -184,8 +183,8 @@ class WordPressHooks
     {
         $customTemplates = require THEME_PATH . '/Config/customTemplates.config.php';
         if (!empty($customTemplates)) {
-            foreach ($customTemplates as $postType => $postTypeCustomTemplates ) {
-                if ( $post_type == $postType) {
+            foreach ($customTemplates as $postType => $postTypeCustomTemplates) {
+                if ($post_type == $postType) {
                     $post_templates = array_merge($post_templates, $postTypeCustomTemplates);
                 }
             }

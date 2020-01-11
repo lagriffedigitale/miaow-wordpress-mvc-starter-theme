@@ -26,7 +26,7 @@ class BasicController
     {
         $timber = new \Timber\Timber();
         if (!class_exists('Timber')) {
-            add_action('admin_notices', function() {
+            add_action('admin_notices', function () {
                 print '<div class="error">';
                 print '<p>' . __('Timber library is not activated. Be sure to install composer or install Timber Plugin', LANG_DOMAIN) . '</p>';
                 print '</div>';
@@ -134,14 +134,15 @@ class BasicController
      * Render Template
      *
      **/
-    public function render() {
+    public function render()
+    {
         $context = Timber::get_context();
         $context = apply_filters('miaow_render_context', $context);
 
         if (is_single()) {
             $post = new Timber\Post();
             $context['post'] = $post;
-            $customTemplate = get_post_meta($post->ID, '_wp_page_template', TRUE);
+            $customTemplate = get_post_meta($post->ID, '_wp_page_template', true);
             Timber::render(
                 'pages/' . ((!empty($customTemplate) && 'default' != $customTemplate) ? $customTemplate : 'single.twig'),
                 $context
@@ -149,7 +150,7 @@ class BasicController
         } elseif (is_page()) {
             $post = new Timber\Post();
             $context['post'] = $post;
-            $customTemplate = get_post_meta($post->ID, '_wp_page_template', TRUE);
+            $customTemplate = get_post_meta($post->ID, '_wp_page_template', true);
             Timber::render(
                 'pages/' . ((!empty($customTemplate) && 'default' != $customTemplate) ? $customTemplate : 'page.twig'),
                 $context

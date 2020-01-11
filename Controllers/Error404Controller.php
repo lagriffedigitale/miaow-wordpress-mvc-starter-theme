@@ -9,6 +9,5 @@ class Error404Controller extends BasicController
 {
     public function __construct()
     {
-
     }
 }

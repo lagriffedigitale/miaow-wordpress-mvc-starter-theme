@@ -5,13 +5,13 @@ use Miaow\Hooks\WordPressHooks;
 use Miaow\Hooks\acfHooks;
 
 // Require Constants
-require_once( __DIR__ . '/Config/constants.config.php');
+require_once(__DIR__ . '/Config/constants.config.php');
 
 // Require Vendor Autoload
-require_once( __DIR__ . '/vendor/autoload.php' );
+require_once(__DIR__ . '/vendor/autoload.php');
 
 // Include Autoloader
-require_once( __DIR__ . '/Tools/Autoloader.php' );
+require_once(__DIR__ . '/Tools/Autoloader.php');
 
 // Register Autoload
 Autoloader::register();
@@ -28,6 +28,7 @@ if (!is_plugin_active('advanced-custom-fields-pro/acf.php')) {
  * Get formatted filesize - Usable from template file
  *
  */
-function get_formatted_filesize($bytes) {
+function get_formatted_filesize($bytes)
+{
     return MediaHelper::getFormattedFileSize($bytes);
 }

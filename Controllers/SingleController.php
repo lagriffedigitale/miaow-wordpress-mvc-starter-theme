@@ -9,6 +9,5 @@ class SingleController extends BasicController
 {
     public function __construct()
     {
-
     }
 }

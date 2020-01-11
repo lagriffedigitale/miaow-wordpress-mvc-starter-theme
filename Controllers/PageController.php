@@ -9,6 +9,5 @@ class PageController extends BasicController
 {
     public function __construct()
     {
-
     }
 }

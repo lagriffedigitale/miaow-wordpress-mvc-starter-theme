@@ -13,7 +13,7 @@
  * You can use "miaow_custom_templates" filter to change custom Post types Templates
  *
  */
-return apply_filters('miaow_custom_templates',[
+return apply_filters('miaow_custom_templates', [
 
     /**
      * Here an example to add a custom template linked with post type

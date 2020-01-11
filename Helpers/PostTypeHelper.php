@@ -9,7 +9,6 @@ class PostTypeHelper
 {
     public function __construct()
     {
-
     }
 
     /**
@@ -23,8 +22,7 @@ class PostTypeHelper
                 // if not args in definition, get default CPT args
                 if (empty($postType['args'])) {
                     $postType['args'] = PostTypeHelper::getDefaultPostTypeConfiguration($postType['singular_name'], $postType['plural_name'], $postType['menu_icon']);
-                }
-                else {
+                } else {
                     $postType['args'] = array_merge(
                         PostTypeHelper::getDefaultPostTypeConfiguration($postType['singular_name'], $postType['plural_name']),
                         $postType['args']
@@ -37,8 +35,7 @@ class PostTypeHelper
                         // if not args in definition, get default Taxonomy args
                         if (empty($taxonomy['args'])) {
                             $taxonomy['args'] = PostTypeHelper::getDefaultTaxonomyConfiguration($taxonomy['singular_name'], $taxonomy['plural_name']);
-                        }
-                        else {
+                        } else {
                             $taxonomy['args'] = array_merge(
                                 PostTypeHelper::getDefaultTaxonomyConfiguration($taxonomy['singular_name'], $taxonomy['plural_name']),
                                 $taxonomy['args']
@@ -80,16 +77,16 @@ class PostTypeHelper
                 'not_found_in_trash'    => sprintf(__('No %s found in trash', LANG_DOMAIN), $postTypeSingularLabel)
             ],
             'description'           =>  sprintf(__('%s post type', LANG_DOMAIN), ucfirst($postTypeSingularLabel)),
-            'public'                => TRUE,
-            'publicly_queryable'    => TRUE,
-            'show_ui'               => TRUE,
-            'show_in_menu'          => TRUE,
-            'query_var'             => TRUE,
+            'public'                => true,
+            'publicly_queryable'    => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'query_var'             => true,
             'rewrite'               => ['rewrite' => $postTypeSingularLabel],
             'capability_type'       => 'post',
-            'has_archive'           => TRUE,
-            'hierarchical'          => TRUE,
-            'menu_position'         => NULL,
+            'has_archive'           => true,
+            'hierarchical'          => true,
+            'menu_position'         => null,
             'menu_icon'             => $menuIcon,
             'supports'              => ['title', 'editor', 'thumbnail', 'excerpt'],
         ];
@@ -107,20 +104,20 @@ class PostTypeHelper
             'labels'        => [
                 'name'                  => __(ucfirst($taxonomyPluralLabel), 'taxonomy general name', LANG_DOMAIN),
                 'singular_name'         => __(ucfirst($taxonomySingularLabel), 'taxonomy singular name', LANG_DOMAIN),
-                'search_items'          => sprintf(__( 'Search %s', LANG_DOMAIN ), $taxonomyPluralLabel),
-                'all_items'             => sprintf(__( 'All %s', LANG_DOMAIN ), $taxonomyPluralLabel),
-                'parent_item'           => sprintf(__( 'Parent %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'parent_item_colon'     => sprintf(__( 'Parent %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'edit_item'             => sprintf(__( 'Edit %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'update_item'           => sprintf(__( 'Update %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'add_new_item'          => sprintf(__( 'Add new %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'new_item_name'         => sprintf(__( 'New %s', LANG_DOMAIN ), $taxonomySingularLabel),
-                'menu_name'             => __( ucfirst($taxonomyPluralLabel), LANG_DOMAIN )
+                'search_items'          => sprintf(__('Search %s', LANG_DOMAIN), $taxonomyPluralLabel),
+                'all_items'             => sprintf(__('All %s', LANG_DOMAIN), $taxonomyPluralLabel),
+                'parent_item'           => sprintf(__('Parent %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'parent_item_colon'     => sprintf(__('Parent %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'edit_item'             => sprintf(__('Edit %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'update_item'           => sprintf(__('Update %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'add_new_item'          => sprintf(__('Add new %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'new_item_name'         => sprintf(__('New %s', LANG_DOMAIN), $taxonomySingularLabel),
+                'menu_name'             => __(ucfirst($taxonomyPluralLabel), LANG_DOMAIN)
             ],
-            'hierarchical'      => TRUE,
-            'show_ui'           => TRUE,
-            'show_admin_column' => TRUE,
-            'query_var'         => TRUE,
+            'hierarchical'      => true,
+            'show_ui'           => true,
+            'show_admin_column' => true,
+            'query_var'         => true,
             'rewrite'           => ['slug' => $taxonomyPluralLabel]
         ];
     }

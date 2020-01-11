@@ -9,6 +9,5 @@ class ArchiveController extends BasicController
 {
     public function __construct()
     {
-
     }
 }

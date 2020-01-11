@@ -9,7 +9,6 @@ class MediaHelper
 {
     public function __construct()
     {
-
     }
 
     /**

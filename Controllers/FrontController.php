@@ -24,7 +24,7 @@ class FrontController extends BasicController
         $post = new \TimberPost();
         $context['post'] = $post;
         // Render Template
-        $customTemplate = get_post_meta($post->ID, '_wp_page_template', TRUE);
+        $customTemplate = get_post_meta($post->ID, '_wp_page_template', true);
         Timber::render(
             'pages/' . ((!empty($customTemplate) && 'default' != $customTemplate) ? $customTemplate : 'front.twig'),
             $context

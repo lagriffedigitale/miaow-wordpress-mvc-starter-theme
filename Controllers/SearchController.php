@@ -9,6 +9,5 @@ class SearchController extends BasicController
 {
     public function __construct()
     {
-
     }
 }

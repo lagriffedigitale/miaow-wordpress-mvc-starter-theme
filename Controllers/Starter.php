@@ -48,8 +48,8 @@ class Starter extends \TimberSite
      */
     public function addToTwig($twig)
     {
-        $twig->addExtension( new \Twig_Extension_StringLoader() );
-		return $twig;
+        $twig->addExtension(new \Twig_Extension_StringLoader());
+        return $twig;
     }
 
 
