@@ -3,5 +3,5 @@
         {% include 'components/menu.twig' with {'menu': footer_menu.items} %}
     {% endif %}
     <hr>
-    ©{{ fn('date', 'Y') }} {{ site.name }} - {{ __('All rights reserved', constant(LANG_DOMAIN)) }}
+    ©{{ fn('date', 'Y') }} {{ site.name }} - {{ __('All rights reserved', constant('LANG_DOMAIN')) }}
 </footer>

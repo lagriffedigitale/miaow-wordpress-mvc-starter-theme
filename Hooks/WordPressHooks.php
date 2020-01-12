@@ -116,10 +116,12 @@ class WordPressHooks
             }
         }
         // Add JS Vars
-        ob_start();
-        require THEME_PATH . '/Config/javascriptVars.config.php';
-        $jsVars = ob_get_clean();
-        wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
+        if (!empty($jsFiles[0])) {
+            ob_start();
+            require THEME_PATH . '/Config/javascriptVars.config.php';
+            $jsVars = ob_get_clean();
+            wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
+        }
     }
 
     /**
