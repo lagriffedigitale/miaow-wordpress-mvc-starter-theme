@@ -5,11 +5,11 @@
         <div class="row grid-x grid-padding-x">
             {% for post in posts %}
                 <hr>
-                    {{ __('Preview post item', LANG_DOMAIN) }} {{ post.title }}
+                    {{ __('Preview post item', constant('LANG_DOMAIN')) }} {{ post.title }}
                 <hr>
             {% endfor %}
         </div>
     {% else %}
-        {{ __('No content available in this category', LANG_DOMAIN) }}
+        {{ __('No content available in this category', constant('LANG_DOMAIN')) }}
     {% endif %}
 {% endblock %}
