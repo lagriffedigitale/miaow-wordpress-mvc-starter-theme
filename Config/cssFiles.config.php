@@ -17,12 +17,6 @@
  *
  */
 return apply_filters('miaow_css_files', [
-    /**
-     * Here an example to enqueue a CSS file
-     *
-     */
-
-    /*
     [
         'handle'        => 'miaow-main-stylesheet',
         'path'          => CSS_PATH . '/app.css',
@@ -30,5 +24,4 @@ return apply_filters('miaow_css_files', [
         'version'       => '2.0.0',
         'media'         => 'all'
     ],
-    */
 ]);

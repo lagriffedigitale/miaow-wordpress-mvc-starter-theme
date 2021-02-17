@@ -1,0 +1,26 @@
+{% if content_block.picture is not empty %}
+    <div class="row block-content block-simple-image grid-x grid-padding-x padding-part">
+        <div class="cell large-10 small-12 large-offset-1 image-container">
+
+            <a href="{{content_block.picture.sizes.diaporama_xlrg}}" data-fancybox data-caption="{{content_block.picture_caption}}">
+                <picture>
+                    <source media="(max-width: 340px)" srcset="{{content_block.picture.sizes.miaow_thumb_xsmall}}">
+                    <source media="(max-width: 480px)" srcset="{{content_block.picture.sizes.miaow_thumb_small}}">
+                    <source media="(max-width: 570px)" srcset="{{content_block.picture.sizes.miaow_thumb_small_large}}">
+                    <source media="(max-width: 800px)" srcset="{{content_block.picture.sizes.miaow_thumb_medium}}">
+                    <source media="(max-width: 1024px)" srcset="{{content_block.picture.sizes.miaow_thumb_medium_large}}">
+                    <source media="(max-width: 1380px)" srcset="{{content_block.picture.sizes.miaow_thumb_large}}">
+                    <source media="(min-resolution: 192dpi) and (min-width : 1280px)" data-srcset="{{content_block.picture.sizes.miaow_thumb_retina}}">
+                    <img id="picture-{{key}}-{{content_block.picture.ID}}" data-src="{{content_block.picture.sizes.miaow_thumb_xlarge}}" alt="{{content_block.picture.title}}" title="{{content_block.picture.title}}" class="lazy">
+                </picture>
+            </a>
+
+            {% if content_block.picture_caption is not empty %}
+                <div class="picture-caption color-2">
+                    {{content_block.picture_caption}}
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+{% endif %}

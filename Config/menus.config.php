@@ -13,13 +13,6 @@
  *
  */
 return apply_filters('miaow_menus_list', [
-    /**
-     * Here an example of menus
-     *
-     */
-
-    /*
     'main-menu'     => __('Main menu', 'miaow'),
     'footer-menu'   => __('Footer menu', 'miaow')
-    */
 ]);

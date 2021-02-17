@@ -1,0 +1,10 @@
+/**
+ * Define font style
+ */
+@mixin font-style($font-family:$font1, $font-size:1rem, $line-height:100%, $color:$color1, $font-weight:400) {
+    font-family: $font-family;
+    font-size  : $font-size;
+    line-height: $line-height;
+    color      : $color;
+    font-weight: $font-weight;
+}

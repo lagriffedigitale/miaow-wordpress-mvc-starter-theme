@@ -1,0 +1,42 @@
+{% if content_block.icons_block %}
+    <div class="row grid-x grid-padding-x block-icons block-content">
+
+        {% if content_block.title %}
+            <div class="small-12 cell">
+                <h2 class="text-center block-title">{{content_block.title}}</h2>
+            </div>
+        {% endif %}
+
+        {% set countItems = content_block.icons_block|length %}
+
+        <div class="small-12 cell">
+            <ul class="icons items-count-{{countItems}}">
+                
+                {% for icon_item in content_block.icons_block %}
+                    <li>
+                        <a href="{{ (icon_item.link is not empty) ? icon_item.link : '#'}}" class="icon-item{% if icon_item.link is not empty %} has-link{% endif %}">
+                            <span class="title">{{icon_item.title}}</span>
+
+                            <span class="icon">
+                                {{icon_item.icon}}
+                            </span>
+
+                            {% if icon_item.text is not empty %}
+                                <div class="icon-text">
+                                    {{icon_item.text}}
+                                </div>
+                            {% endif %}
+
+                            {% if icon_item.link is not empty %}
+                                <span class="icon-link" >
+                                    {{icon_item.link_label}}
+                                </span>
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,33 @@
+/**
+ * Import Global styles
+ */
+@import "global/variables";
+@import "global/mixins";
+@import "global/foundation";
+@import "global/foundation-settings";
+@import "global/layout";
+/**
+ * Import Components styles
+ */
+@import "components/cookie-banner";
+/**
+ * Import Content Blocks styles
+ */
+@import "content-blocks/block-content";
+@import "content-blocks/block-accordions";
+@import "content-blocks/block-background-and-text";
+@import "content-blocks/block-text-in-columns";
+@import "content-blocks/block-tabs";
+@import "content-blocks/block-gmaps";
+@import "content-blocks/block-simple-image";
+@import "content-blocks/block-pictures-wall";
+@import "content-blocks/block-linked-news";
+@import "content-blocks/block-video";
+@import "content-blocks/block-icons";
+@import "content-blocks/block-form";
+/**
+ * Import template parts styles
+ */
+/**
+ * Import template pages styles
+ */

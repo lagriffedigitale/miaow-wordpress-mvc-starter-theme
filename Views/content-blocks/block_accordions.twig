@@ -1,0 +1,25 @@
+<div class="row block-content block-accordions">
+    <div class="grid-x grid-padding-x padding-part">
+        <div class="cell large-10 medium-12 small-12 large-offset-1">
+            {% if content_block.title %}
+                <h2 class="text-center block-title">{{content_block.title}}</h2>
+            {% endif %}
+
+            {% if content_block.accordeons is not empty %}
+                <div class="accordions">
+                    {% for accordion_id, accordion in content_block.accordeons %}
+                        <div class="accordion{{(accordion.opened is not empty) ? ' active' : ''}}" id="accordion-{{key}}-{{accordion_id}}">
+                            <a href="#" class="accordion-title js-open-accordion">
+                                {{accordion.title}}
+                                <i></i>
+                            </a>
+                            <div class="accordion-content">
+                                {{accordion.content}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

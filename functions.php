@@ -20,7 +20,7 @@ Autoloader::register();
 new WordPressHooks();
 
 // ACF Hooks if ACF Pro is installed
-if (!is_plugin_active('advanced-custom-fields-pro/acf.php')) {
+if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
     new acfHooks();
 }
 

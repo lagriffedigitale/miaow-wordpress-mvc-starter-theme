@@ -1,0 +1,80 @@
+.block-background-and-text {
+    position           : relative;
+    padding            : 110px 0;
+    background-color   : $color3;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+
+    &.fixed-background {
+        background-attachment: fixed;
+    }
+
+    &:before {
+        content   : '';
+        position  : absolute;
+        display   : block;
+        z-index   : 1;
+        top       : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 100%;
+        background: rgba(0, 0, 0, 0.65);
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
+    }
+
+    .row {
+        position  : relative;
+        z-index   : 2;
+        text-align: center;
+    }
+
+    .title {
+        margin: 0;
+        @include font-style($font1, 2rem, 110%, $color0, 700);
+    }
+
+    .subtitle {
+        margin : 0;
+        padding: 0;
+        @include font-style($font1, 1.75rem, 110%, $color2, 400);
+    }
+
+    .text-container {
+        a,
+        ol li,
+        p,
+        ul li {
+            @include font-style($font1, 1.15rem, 150%, $color0, 400);
+        }
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(medium only) {
+    .background-image-text-block {
+        padding: 75px 0;
+
+        .title {
+            font-size: 1.75rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+        }
+    }
+}
+@include breakpoint(small only) {
+    .background-image-text-block {
+        padding: 45px 0;
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<div class="block-content block-background-and-text lazy-background{{content_block.fixed_image ? ' fixed-background' : ''}}" id="background-text-block-{{key}}" data-bg="{{content_block.background_image.sizes.diaporama_xlrg}}">
+    <div class="row grid-x grid-padding-x">
+        <div class="large-8 medium-10 small-12 cell large-offset-2 medium-offset-1">
+            {% if content_block.title is not empty %}
+                <h2 class="title">{{content_block.title}}</h2>
+            {% endif %}
+            {% if content_block.subtitle is not empty %}
+                <h3 class="subtitle color-2">{{content_block.subtitle}}</h2>
+            {% endif %}
+            <div class="text-container">
+                {{content_block.text}}
+            </div>
+        </div>
+    </div>
+</div>

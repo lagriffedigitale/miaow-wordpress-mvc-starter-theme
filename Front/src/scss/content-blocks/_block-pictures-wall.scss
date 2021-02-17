@@ -1,0 +1,87 @@
+.pictures-wall {
+    position: relative;
+    width   : 100%;
+    height  : auto;
+
+    .grid-item {
+        z-index   : 1;
+        width     : calc(100% / 3);
+        min-height: 110px;
+        padding   : 5px;
+
+        &:before {
+            content   : '';
+            position  : absolute;
+            z-index   : 2;
+            display   : block;
+            top       : 5px;
+            left      : 5px;
+            width     : calc(100% - 10px);
+            height    : calc(100% - 10px);
+            background: $color3;
+        }
+
+        &.loaded {
+            &:before,
+            .loader {
+                display: none;
+            }
+        }
+
+        .loader {
+            position: absolute;
+            z-index : 2;
+            top     : calc(50% - 20px);
+            left    : calc(50% - 20px);
+            width   : 40px;
+            height  : 40px;
+        }
+
+        a {
+            display : block;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                transition: all 250ms cubic-bezier($bezier);
+            }
+
+            i {
+                position   : absolute;
+                top        : 100%;
+                left       : 50%;
+                transform  : translateY(-50%) translateX(-50%);
+                font-size  : 1.75rem;
+                color      : $color0;
+                opacity    : 0;
+                text-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
+                transition : all 350ms cubic-bezier($bezier);
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.5;
+                }
+
+                i {
+                    top    : 50%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(medium only) {
+    .pictures-wall .grid-item {
+        min-height: 80px;
+    }
+}
+@include breakpoint(small only) {
+    .pictures-wall .grid-item {
+        width     : calc(100% / 2);
+        min-height: 80px;
+    }
+}

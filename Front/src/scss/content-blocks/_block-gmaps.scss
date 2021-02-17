@@ -1,0 +1,53 @@
+.block-gmaps {
+    .gmaps {
+        width     : 100%;
+        height    : 550px;
+        background: $color3;
+    }
+
+    .infowindow {
+        width  : 260px!important;
+        padding: 7px;
+        @include font-style($font1, 0.875rem, 150%, $color1);
+
+        .infowindow-title {
+            margin     : 0;
+            padding    : 0;
+            font-size  : 1.05rem;
+            line-height: 110%;
+            font-weight: 700;
+
+            &:after {
+                content   : '';
+                display   : block;
+                width     : 45px;
+                height    : 1px;
+                margin    : 15px 0;
+                background: $color1;
+            }
+        }
+
+        .infowindow-text {
+            padding-bottom: 15px;
+            margin-bottom : 15px;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .infowindow-address {
+            color: $color2;
+        }
+    }
+}
+/**
+ * Responsive rules 
+ */
+@include breakpoint(medium only) {
+    .gmaps {
+        height: 420px;
+    }
+}
+@include breakpoint(small only) {
+    .gmaps {
+        height: 65vh;
+    }
+}

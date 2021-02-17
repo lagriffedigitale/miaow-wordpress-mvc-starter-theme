@@ -1,0 +1,24 @@
+<div class="row grid-x grid-padding-x block-content block-text-and-picture">
+    {% if content_block.title %}
+        <div class="small-12 cell">
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        </div>
+    {% endif %}
+
+    <div class="image-container text-center cell medium-5 small-12 {{ (content_block.picture_position is not empty) ? 'large-order-2 medium-order-2' : 'large-order-1 medium-order-1' }} small-order-2">
+        <a href="{{content_block.picture.sizes.miaow_thumb_medium}}" data-fancybox>
+            <picture>
+                <source media="(max-width: 340px)" srcset="{{content_block.picture.sizes.miaow_thumb_xsmall}}">
+                <source media="(max-width: 480px)" srcset="{{content_block.picture.sizes.miaow_thumb_small}}">
+                <source media="(max-width: 570px)" srcset="{{content_block.picture.sizes.miaow_thumb_small_large}}">
+                <source media="(max-width: 800px)" srcset="{{content_block.picture.sizes.miaow_thumb_medium}}">
+                <source media="(min-resolution: 192dpi) and (min-width : 1280px)" srcset="{{content_block.picture.sizes.miaow_thumb_xlarge}}">
+                <img src="{{content_block.picture.sizes.miaow_thumb_medium_large}}" alt="{{content_block.picture.title}}" title="{{content_block.picture.title}}" class="lazy" id="text-picture-block-{{key}}-{{content_block.picture.ID}}">
+            </picture>
+        </a>
+    </div>
+
+    <div class="cell medium-7 small-12 {{ (content_block.picture_position is not empty) ? 'large-order-1 medium-order-1' : 'large-order-2 medium-order-2' }} small-order-1">
+        {{content_block.content}}
+    </div>
+</div>

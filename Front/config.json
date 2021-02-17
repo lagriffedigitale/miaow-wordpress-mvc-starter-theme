@@ -1,0 +1,8 @@
+{
+  "rootDir": "web",
+  "publicPath": "wp-content/themes",
+  "distDirName": "dist",
+  "host": "localhost",
+  "hostName": "miaow.lan",
+  "themeName": "miaow"
+}

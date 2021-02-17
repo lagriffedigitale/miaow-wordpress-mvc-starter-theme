@@ -3,7 +3,7 @@ define('THEME_PATH', get_template_directory());
 define('THEME_URI', get_template_directory_uri());
 define('TPL_PATH', THEME_PATH . '/Views');
 define('CTRL_PATH', THEME_PATH . '/Controllers');
-define('ASSETS_PATH', THEME_URI . '/dist/assets');
+define('ASSETS_PATH', THEME_URI . '/dist');
 define('CSS_PATH', ASSETS_PATH . '/css');
 define('JS_PATH', ASSETS_PATH . '/js');
 define('IMG_PATH', ASSETS_PATH . '/images');

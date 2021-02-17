@@ -1,0 +1,42 @@
+.block-text-in-columns {
+    .column-item {
+        .title {
+            margin    : 0;
+            padding   : 0;
+            text-align: center;
+            @include font-style($font1, 1.5rem, 110%, $color1, 700);
+        }
+
+        .subtitle {
+            margin        : 5px 0 0;
+            padding       : 0;
+            text-align    : center;
+            text-transform: lowercase;
+            @include font-style($font1, 1.25rem, 110%, $color2);
+        }
+
+        .text-container {
+            text-align: center;
+
+            a,
+            ol li,
+            p,
+            ul li {
+                text-align: justify;
+                @include font-style($font1, 0.875rem);
+            }
+        }
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(small only) {
+    .block-column-text .column-item .title {
+        font-size: 1.35rem;
+    }
+
+    .block-column-text .column-item .subtitle {
+        font-size: 1.15rem;
+    }
+}

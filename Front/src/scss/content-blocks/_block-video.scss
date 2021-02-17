@@ -1,0 +1,19 @@
+.block-video {
+    iframe {
+        width : 100%!important;
+        height: 500px!important;
+    }
+}
+/**
+ * Responsive rules 
+ */
+@include breakpoint(medium only) {
+    .block-video iframe {
+        height: 340px!important;
+    }
+}
+@include breakpoint(small only) {
+    .block-video iframe {
+        height: 220px!important;
+    }
+}

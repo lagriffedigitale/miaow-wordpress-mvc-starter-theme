@@ -5,9 +5,6 @@ node_modules/
 /packaged/
 /backup/
 /dist/
-/FrontendDevelopement/
-/Front/
-/front/
 .idea
 *.swp
 *.log

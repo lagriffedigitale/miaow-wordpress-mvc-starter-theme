@@ -1,0 +1,27 @@
+<div class="row block-content grid-x grid-padding-x block-pictures-wall block-content">
+    <div class="cell small-12">
+        {% if content_block.title %}
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        {% endif %}
+
+        {% if content_block.pictures %}
+            <div class="pictures-wall js-pictures-wall" id="pictures-wall-block-{{key}}">
+                {% for picture_id, picture in content_block.pictures %}
+                    <div class="grid-item">
+                        <a href="{{picture.picture.sizes.miaow_thumb_xlarge}}" title="{{picture.picture.title}}" data-caption="{{picture.picture.title}}" data-fancybox="gallery-{{key}}">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="{{picture.picture.sizes.miaow_thumb_xsmall}}">
+                                <source media="(max-width: 1380px)" srcset="{{picture.picture.sizes.miaow_thumb_small}}">
+                                <source media="(min-resolution: 192dpi) and (min-width : 1280px)" data-srcset="{{content_block.picture.sizes.miaow_thumb_medium_large}}">
+                                <img src="{{picture.picture.sizes.miaow_thumb_medium}}" alt="{{picture.picture.title}}" title="{{picture.picture.title}}" id="image-{{key}}-{{picture_id}}">
+                            </picture>
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <div class="loader"></div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+    </div>
+</div>

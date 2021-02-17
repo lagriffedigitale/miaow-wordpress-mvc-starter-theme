@@ -1,0 +1,114 @@
+.block-form {
+    label {
+        display: block;
+        margin : 0 0 3px;
+        @include font-style($font1, 0.9375rem);
+
+        sup {
+            color: red;
+        }
+    }
+
+    span.wpcf7-list-item {
+        position: relative;
+        margin  : 0 0 1.5rem;
+
+        label {
+            position: relative;
+        }
+
+        .wpcf7-list-item-label {
+            position    : relative;
+            padding-left: 5px;
+            cursor      : pointer;
+            @include font-style($font1, 0.875rem);
+        }
+    }
+
+    .wpcf7-response-output {
+        width     : 100%;
+        margin    : 0 auto 30px;
+        padding   : 15px;
+        text-align: center;
+        border    : 0;
+        background: #f7d2d2;
+        @include font-style($font1, 0.9rem, 115%, #480c0c);
+
+        &.wpcf7-mail-sent-ok {
+            color     : #1c480c;
+            background: #d5f7c9;
+        }
+    }
+
+    .input-container {
+        margin-bottom: 1.25rem;
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width        : 100%;
+            height       : 40px;
+            border       : 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding      : 10px;
+            @include font-style($font1, 0.875rem);
+
+            &:focus {
+                border-color: $color2;
+                outline     : 0;
+            }
+        }
+
+        .wpcf7-not-valid-tip {
+            width    : 250px;
+            color    : red;
+            font-size: 0.7rem;
+        }
+
+        textarea {
+            height : 150px;
+            padding: 10px;
+        }
+    }
+
+    .submit-container {
+        position  : relative;
+        text-align: right;
+
+        .ajax-loader {
+            position : absolute;
+            z-index  : 2;
+            top      : 50%;
+            right    : 20px;
+            transform: translateY(-50%);
+        }
+
+        input[type="submit"] {
+            width     : auto;
+            padding   : 15px 35px;
+            background: $color2;
+            border    : 1px solid $color2;
+            outline   : 0;
+            cursor    : pointer;
+            transition: all 300ms ease-out;
+            @include font-style($font1, 1rem, 100%, $color0, 600);
+
+            &[disabled] {
+                cursor : not-allowed;
+                opacity: 0.25;
+
+                &:hover {
+                    background: $color2;
+                    border    : 1px solid $color2;
+                    color     : $color0;
+                }
+            }
+
+            &:hover {
+                background: $color0;
+                color     : $color2;
+            }
+        }
+    }
+}

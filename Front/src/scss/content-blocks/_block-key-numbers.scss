@@ -1,0 +1,92 @@
+.block-key-numbers {
+    .key-numbers {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+        align-items    : stretch;
+        margin         : 0;
+        padding        : 0;
+        list-style     : none;
+
+        li {
+            display    : flex;
+            align-items: stretch;
+            flex-basis : calc(100% / 4);
+        }
+    }
+
+    .key-number-item {
+        display      : block;
+        width        : calc(100% - 1.875rem);
+        margin-bottom: 1.875rem;
+        background   : $color4;
+        padding      : 30px 10px;
+
+        .title {
+            display       : block;
+            text-align    : center;
+            text-transform: none;
+            opacity       : 0.75;
+            @include font-style($font1, 1.75rem, 110%);
+        }
+
+        .number {
+            display   : block;
+            text-align: center;
+            margin    : 25px 0 0;
+            @include font-style($font1, 2.75rem, 110%, $color2, 700);
+
+            &:after {
+                content   : '';
+                display   : block;
+                width     : 45px;
+                height    : 1px;
+                margin    : 15px auto;
+                background: rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        .text {
+            display   : block;
+            text-align: center;
+            margin    : 0 auto;
+            opacity   : 0.5;
+            width     : 90%;
+            @include font-style($font1, 0.8375rem, 150%);
+        }
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(medium only) {
+    .block-key-numbers {
+        .key-numbers {
+            li {
+                flex-basis: calc(100% / 2);
+            }
+        }
+
+        .key-number-item {
+            width        : calc(100% - 1.25rem);
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+@include breakpoint(small only) {
+    .block-key-numbers {
+        .key-numbers {
+            li {
+                flex-basis: 100%;
+
+                .key-number-item {
+                    width: 100%;
+
+                    .title {
+                        font-size: 1.45rem;
+                    }
+                }
+            }
+        }
+    }
+}

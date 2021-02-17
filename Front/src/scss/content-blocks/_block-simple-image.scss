@@ -1,0 +1,27 @@
+.block-simple-image {
+    text-align: center;
+
+    img {
+        display  : block;
+        max-width: 100%;
+        margin   : 0 auto 15px;
+    }
+
+    .picture-caption {
+        @include font-style($font1, 0.875rem, 110%, $color2);
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(small only) {
+    .block-simple-image {
+        img {
+            margin-bottom: 10px;
+        }
+
+        .picture-caption {
+            font-size: 0.75rem;
+        }
+    }
+}

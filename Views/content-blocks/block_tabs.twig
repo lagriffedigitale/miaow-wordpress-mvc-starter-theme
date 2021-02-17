@@ -1,0 +1,31 @@
+<div class="row block-content block-tabs grid-x grid-padding-x padding-part">
+    <div class="cell large-10 medium-12 small-12 large-offset-1">
+        {% if content_block.title %}
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        {% endif %}
+
+        {% if content_block.tabs is not empty %}
+            <nav class="tabs-nav">
+                <ul>
+                {% for tab_id, tab in content_block.tabs %}
+                    <li class="tab-nav-item{{ (onglet_id == 0) ? ' active' : '' }}">
+                        <a href="#" class="js-open-tab" data-id="tab-{{key}}-{{tab_id}}">
+                            {{tab.title}}
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+
+        {% if content_block.tabs is not empty %}
+            <div class="tabs">
+                {% for tab_id, tab in content_block.tabs %}
+                    <div class="tab{{(onglet_id == 0) ? ' active' : '' }}" id="tab-{{key}}-{{onglet_id}}">
+                        {{tab.content}}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>

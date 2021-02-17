@@ -1,0 +1,47 @@
+body {
+    background: $color0;
+    text-align: center;
+}
+
+.main-wrapper {
+    position  : relative;
+    max-width : 100%;
+    margin    : 0 auto;
+    padding   : 0;
+    text-align: left;
+    background: $color0;
+    overflow  : hidden;
+}
+
+.page-content {
+    padding : 65px 0;
+    overflow: hidden;
+
+    .block-content:first-child {
+        margin-top: 0;
+    }
+}
+
+.row {
+    width    : 100%;
+    max-width: 75rem;
+    margin   : 0 auto;
+
+    &.full {
+        max-width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    outline        : none;
+    transition     : all 450ms cubic-bezier($bezier);
+}
+/**
+ * Responsive Rules
+ */
+@include breakpoint(small only) {
+    .page-content {
+        padding: 30px;
+    }
+}

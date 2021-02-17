@@ -1,0 +1,30 @@
+{% if content_block.key_numbers %}
+    <div class="row grid-x grid-padding-x block-key-numbers block-content">
+
+        {% if content_block.title %}
+            <div class="small-12 cell">
+                <h2 class="text-center block-title">{{content_block.title}}</h2>
+            </div>
+        {% endif %}
+
+        <div class="small-12 cell">
+            <ul class="key-numbers">
+
+                {% for item_key_number in content_block.key_numbers %}
+                    <li class="key-number">
+                        <span class="key-number-item">
+
+                            {% if item_key_number.title is not empty %}
+                                <span class="title">{{item_key_number.title}}</span>
+                            {% endif %}
+
+                            <span class="number color-2" data-number="{{item_key_number.number}}">{{item_key_number.number}}</span>
+                            <p class="text">{{item_key_number.text}}</p>
+                        </span>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+{% endif %}

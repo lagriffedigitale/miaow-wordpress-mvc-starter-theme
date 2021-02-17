@@ -1,0 +1,11 @@
+<div class="row grid-x grid-padding-x block-content block-form">
+    <div class="cell small-12 large-8 medium-12 large-offset-2">
+
+        {% if content_block.title %}
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        {% endif %}
+
+        {{fn('do_shortcode', '[contact-form-7 id="' ~ content_block.form_to_integrate ~ '"]')}}
+
+    </div>
+</div>

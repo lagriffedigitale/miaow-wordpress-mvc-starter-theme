@@ -1,0 +1,141 @@
+.block-content {
+    margin-bottom: 45px;
+    margin-top   : 45px;
+
+    & > *:first-child {
+        margin-top: 0!important;
+    }
+
+    & > *:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .block-title {
+        margin    : 0;
+        padding   : 0;
+        text-align: center;
+        @include font-style($font1, 2.15rem, 110%, $color1, 700);
+
+        &:after {
+            content   : '';
+            display   : block;
+            width     : 65px;
+            height    : 1px;
+            background: $color2;
+            margin    : 15px auto 45px;
+        }
+    }
+
+    a,
+    ol li,
+    p,
+    ul li {
+        @include font-style($font1, 1rem, 150%, $color1, 400);
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: $color2;
+        }
+    }
+
+    ol,
+    ul {
+        margin-left: 1.5rem;
+    }
+
+    blockquote {
+        margin    : 45px auto;
+        padding   : 15px;
+        background: transparent;
+        border    : 0;
+        background: $color3;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding-top  : 0.65rem;
+        margin-bottom: 0.65rem;
+        @include font-style($font1, 2rem, 115%);
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1.05rem;
+    }
+}
+/**
+ * Responsive rules
+ */
+@include breakpoint(medium only) {
+    .block-content {
+        .block-title {
+            font-size: 1.9rem;
+        }
+
+        h1,
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        h5 {
+            font-size: 1.15rem;
+        }
+    }
+}
+@include breakpoint(small only) {
+    .block-content {
+        margin-bottom: 30px;
+        margin-top   : 30px;
+
+        .block-title {
+            font-size: 1.5rem;
+        }
+
+        h1,
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+        }
+
+        h5 {
+            font-size: 1.05rem;
+        }
+    }
+}

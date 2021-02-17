@@ -1,0 +1,25 @@
+<div class="row block-content block-text-in-columns grid-x grid-padding-x">
+    {% if content_block.title %}
+        <div class="small-12 cell">
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        </div>
+    {% endif %}
+
+    {% set countTextColumn = content_block.text_columns|length %}
+    {% set columnClass = 12 / countTextColumn %}
+
+    {% for item in content_block.text_columns %}
+        <div class="column-item cell small-12 medium-{{columnClass}}">
+            <h3 class="title">{{item.title}}</h3>
+
+            {% if item.subtitle is not empty %}
+                <h4 class="subtitle">{{item.subtitle}}</h4>
+            {% endif %}
+
+            <div class="text-container">
+                {{item.text}}
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

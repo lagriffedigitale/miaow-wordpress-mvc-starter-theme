@@ -17,18 +17,11 @@
  *
  */
 return apply_filters('miaow_js_files', [
-    /**
-     * Here an example to enqueue a Javascript file
-     *
-     */
-
-    /*
     [
         'handle'        => 'miaow-main-js',
         'path'          => JS_PATH . '/app.js',
         'dependencies'  => ['jquery', 'masonry'],
         'version'       => '2.0.0',
-        'in_footer'     => TRUE
+        'in_footer'     => true
     ]
-    */
 ]);

@@ -1,0 +1,83 @@
+.block-accordions {
+    .accordion {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &.active {
+            .accordion-title {
+                color     : $color0;
+                background: $color2;
+
+                i:after,
+                i:before {
+                    background: $color0;
+                }
+
+                i:after {
+                    display: none;
+                }
+            }
+
+            .accordion-content {
+                display: block;
+            }
+        }
+    }
+
+    .accordion-title {
+        display   : block;
+        position  : relative;
+        padding   : 10px 45px 15px 10px;
+        background: $color3;
+        @include font-style($font1, 1.1rem, 100%, $color1);
+
+        &:hover {
+            color: $color2;
+
+            i {
+                transform: translateY(-50%) rotate(90deg);
+
+                &:after,
+                &:before {
+                    background-color: $color2;
+                }
+            }
+        }
+
+        i {
+            position  : absolute;
+            display   : block;
+            top       : 50%;
+            right     : 15px;
+            transform : translateY(-50%);
+            width     : 18px;
+            height    : 18px;
+            transition: all 300ms ease-out;
+
+            &:after,
+            &:before {
+                content   : '';
+                position  : absolute;
+                top       : 50%;
+                left      : 50%;
+                transform : translateY(-50%) translateX(-50%);
+                width     : 100%;
+                height    : 2px;
+                background: $color1;
+                transition: all 450ms cubic-bezier($bezier);
+            }
+
+            &:after {
+                transform: translateY(-50%) translateX(-50%) rotate(90deg);
+            }
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 15px;
+    }
+}

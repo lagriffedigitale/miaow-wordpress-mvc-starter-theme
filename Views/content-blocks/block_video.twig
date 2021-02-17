@@ -1,0 +1,12 @@
+<div class="row grid-x grid-padding-x block-video block-content">
+    <div class="cell large-8 medium-10 small-12 large-offset-2 medium-offset-1">
+
+        {% if content_block.title %}
+            <h2 class="text-center block-title">{{content_block.title}}</h2>
+        {% endif %}
+
+        <div class="video-container">
+            {{content_block.video}}
+        </div>
+    </div>
+</div>
